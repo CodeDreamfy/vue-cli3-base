@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>support©deloitte.com.cn</p>
+    <p>support©codedreamfy</p>
   </footer>
 </template>
 
