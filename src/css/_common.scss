@@ -1,0 +1,16 @@
+$color-skins: 
+  theme1 rgba(#005c99, 1) #ccc 14,
+  theme2 rgba(#009425, 1) #ccc 14,
+  theme3 rgba(#7f86e4, 1) #ccc 14;
+
+@mixin font-color {
+  @at-root {
+    @each $name, $color1, $bg, $fz in $color-skins {
+      html[skin="#{$name}"] & {
+        color: $color1;
+        background-color: $bg;
+        font-size: $fz;
+      }
+    }
+  }
+}

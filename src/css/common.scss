@@ -1,0 +1,193 @@
+/**
+ * custom reset.css
+ * author: CodeDreamfy
+ * update: 29/05/2019
+ */
+html, body, #app, .wrapper {
+  width: 100%;
+  height: 100%;
+  font: 16px/1.7 
+  /*西文*/-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,Arial,
+  /*中文*/"PingFang SC","Microsoft YaHei","Source Han Sans CN",SimSun,sans-serif;
+  -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  overflow: hidden;
+}
+ul,li,ol,h1,h2,h3,p { margin: 0; padding: 0;}
+a { text-decoration: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; color: #fff;}
+ul,ol { list-style: none;}
+em,i { font-style: normal;}
+h1,h2,h3 { font-size: 100%; font-weight: normal;}
+img, video { width: 100%;}
+
+// 包含header/footer/main主骨架
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  header {
+    flex: 0 0 50px;
+    background: #23262E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    a, span {
+      display: inline-block;
+    }
+    .container-left {
+      flex: 0 0 400px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .project-list {
+        flex: 0 0 140px;
+        .d-el-dropdown {
+          width: 100%;
+          .el-dropdown-link { 
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .operator {
+      flex: 0 0 1;
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        flex-flow: column;
+        padding: 0 6px;
+        height: 50px;
+        justify-content: center;
+        align-items: stretch;
+        position: relative;
+        color: rgba(#fff, 0.7);
+        &:hover {
+          color: #fff;
+          .user-face-i {
+            border-color: #fff;
+          }
+        }
+        i {
+          font-size: 20px;
+          height: 24px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px; line-height: 1;
+          text-align: center;
+        }
+        &.user-face {
+          .user-face-i {
+            align-self: center;
+            width: 22px;
+            height: 22px;
+            line-height: 18px;
+            border: 2px solid rgba(#fff, 0.7);
+            border-radius: 50%;
+            margin-bottom: 2px;
+            font-size: 13px;
+          }
+          .child-menu {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            padding: 10px 0;
+            background-color: #fff;
+            border: 1px solid #ebeef5;
+            border-radius: 4px;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+            &:after {
+              content: '';
+              position: absolute;
+              top: -12px; left: 50%;
+              margin-left: -6px;
+              @include triangle(6px, bottom, #fff);
+            }
+            li {
+              line-height: 36px;
+              color: #606266;
+              font-size: 12px;
+              padding: 0 10px;
+              text-align: center;
+              @include text-overflow;
+              transition: all .3s;
+              background: rgba(0,0,0,.1);
+              &:hover {
+                color: #fff;
+                background: rgb(134,188,37);
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 414px) {
+      & {
+        position: relative;
+        .container-left {
+          flex: auto;
+          .logo {
+            flex: 0 0 100%;
+          }
+        }
+        .operator {
+          position: absolute;
+          top: 10px; right: 10px;
+          .lock, .notification, .user-face { display: none; }
+        }
+      }
+    }
+  }
+  
+  .main {
+    flex: auto;
+  }
+  footer {
+    flex: 0 0 20px;
+    background: #eee;
+  }
+}
+.d-dropdown {
+  width: 200px;
+  li {
+    width: 100%;
+  }
+}
+.d-el-input {
+  .el-input__inner:focus {
+    @include border-color;
+  }
+}
+.dlogo {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  .main-logo {
+    width: 110px;
+    height: 40px;
+    line-height: 35px;
+    margin-left: 20px;
+  }
+  .line {
+    margin-left: 8px;
+    width: 3px;
+    height: 26px;
+    background: #fff;
+  }
+  .desc-logo {
+    margin-left: 6px;
+    font-size: 22px;
+    color: rgb(134,188,37);
+    font-weight: 100;
+  }
+}

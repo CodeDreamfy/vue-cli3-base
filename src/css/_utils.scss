@@ -1,0 +1,68 @@
+$color-skins: (
+  theme1: rgba(#76b533, 1)
+);
+
+$background-skins:(
+  theme1: rgba(#76b533, 1),
+);
+
+$border-skins:(
+  theme1: rgba(#76b533, 1),
+);
+@mixin font-color {
+  @at-root {
+    @each $name, $value in $color-skins {
+      html[skin="#{$name}"] & {
+        color: $value;
+      }
+    }
+  }
+}
+@mixin background-color {
+  @at-root {
+    @each $name, $value in $background-skins {
+      html[skin="#{$name}"] & {
+        background-color: $value;
+      }
+    }
+  }
+}
+
+@mixin border-color {
+  @at-root {
+    @each $name, $value in $border-skins {
+      html[skin="#{$name}"] & {
+        border-color: $value;
+      }
+    }
+  }
+}
+/**
+ * 三角形
+ */
+@mixin triangle($w: 6px, $direction: bottom, $color: #fff) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+  border-width: $w;
+  border-#{$direction}-color: $color;
+}
+
+/**
+ * @param $line       超出显示省略号的行数，默认：1
+ * @param $substract  为预留区域百分比%，默认：0
+ */
+@mixin text-overflow($line: 1, $substract: 0) {
+    overflow: hidden;
+    @if $line==1 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100% - $substract;
+    }
+    @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+}

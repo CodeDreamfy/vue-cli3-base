@@ -1,0 +1,49 @@
+{
+  "name": "dealbook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-component": "^1.1.1",
+    "core-js": "^2.6.5",
+    "cssnano": "^4.1.10",
+    "dhtmlx-gantt": "^6.1.5",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.8.2",
+    "eslint-plugin-html": "^5.0.5",
+    "imports-loader": "^0.8.0",
+    "jquery": "1.11.3",
+    "jquery-mousewheel": "^3.1.13",
+    "lodash": "^4.17.11",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "postcss": "^7.0.16",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-url": "^8.0.0",
+    "sanitize.css": "^9.0.0",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuejs-logger": "^1.5.3",
+    "vuex": "^3.0.1",
+    "vuex-i18n": "^1.11.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
