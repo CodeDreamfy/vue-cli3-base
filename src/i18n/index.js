@@ -11,7 +11,7 @@ export default () => {
 
   if (messages) {
     Object.entries(messages).forEach((prop) => {
-      Vue.i18n.add(prop, messages[prop]);
+      Vue.i18n.add(prop[0], prop[1]);
     });
   }
   Vue.i18n.set('en-US');
