@@ -28,11 +28,11 @@ const routes = [
   // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 ];
 
-console.log('process.env.BASE_URL', process.env.BASE_URL);
+// console.log('process.env.BASE_URL', process.env.BASE_URL);
 
 const router = new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  // base: process.env.BASE_URL,
   routes,
 });
 router.beforeRouteEnter = (to, from, next) => {

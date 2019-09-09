@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "alpha": "vue-cli-service build --mode alpha"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -16,10 +17,11 @@
     "echarts": "^4.2.1",
     "element-ui": "^2.8.2",
     "eslint-plugin-html": "^5.0.5",
+    "eslint-utils": "1.4.1",
     "imports-loader": "^0.8.0",
     "jquery": "1.11.3",
     "jquery-mousewheel": "^3.1.13",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "postcss": "^7.0.16",
     "postcss-import": "^12.0.1",

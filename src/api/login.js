@@ -1,4 +1,5 @@
 import axios from '@/request/http';
+import { BASEURL } from '@/api/base';
 /**
  * login模块接口列表
  */
@@ -7,7 +8,7 @@ import axios from '@/request/http';
 
 export default {
   login() {
-    return axios.get('http://baidu.com');
+    return axios.get(BASEURL);
   },
   // 其他接口…………
 };
