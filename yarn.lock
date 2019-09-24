@@ -2072,6 +2072,11 @@ circular-json@^0.3.1:
   resolved "http://r.cnpmjs.org/circular-json/download/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
   integrity sha1-gVyZ6oT2gJUp0vRXkb34JxE1LWY=
 
+clamp-js@^0.7.0:
+  version "0.7.0"
+  resolved "http://r.cnpmjs.org/clamp-js/download/clamp-js-0.7.0.tgz#95c49e0e28323c8eeac8c63201dddf30dbd78fce"
+  integrity sha1-lcSeDigyPI7qyMYyAd3fMNvXj84=
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "http://r.cnpmjs.org/class-utils/download/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -2700,6 +2705,11 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "http://r.cnpmjs.org/date-now/download/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
+
+dayjs@^1.8.16:
+  version "1.8.16"
+  resolved "http://r.cnpmjs.org/dayjs/download/dayjs-1.8.16.tgz#2a3771de537255191b947957af2fd90012e71e64"
+  integrity sha1-Kjdx3lNyVRkblHlXry/ZABLnHmQ=
 
 de-indent@^1.0.2:
   version "1.0.2"
@@ -7028,7 +7038,7 @@ postcss@^6.0.1, postcss@^6.0.23:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.5, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.2, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.18"
   resolved "http://r.cnpmjs.org/postcss/download/postcss-7.0.18.tgz#4b9cda95ae6c069c67a4d933029eddd4838ac233"
   integrity sha1-S5zala5sBpxnpNkzAp7d1IOKwjM=
@@ -8807,6 +8817,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "http://r.cnpmjs.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
   integrity sha1-J1b0bLMlgFTF9HI96K5+hzAqHM8=
+
+vue-i18n@^8.14.1:
+  version "8.14.1"
+  resolved "http://r.cnpmjs.org/vue-i18n/download/vue-i18n-8.14.1.tgz#0ca0a2742c14e0144481655157fffcc7cc313e50"
+  integrity sha1-DKCidCwU4BREgWVRV//8x8wxPlA=
 
 vue-loader@^15.7.0:
   version "15.7.1"

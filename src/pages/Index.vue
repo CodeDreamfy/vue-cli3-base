@@ -1,26 +1,26 @@
 <template>
   <div class="wrapper">
-    <d-header></d-header>
-    <div class="main"></div>
+    <header>Gantt</header>
+    <div class="main">
+      <div class="left-box">
+        <work-item-wrap></work-item-wrap>
+      </div>
+      <div class="gantt-box"></div>
+    </div>
+    <footer></footer>
     <!-- <router-view></router-view> -->
-    <d-footer></d-footer>
   </div>
 </template>
 
 <script>
-import DHeader from '../components/DHeader.vue';
-import DFooter from '../components/DFooter.vue';
+import WorkItemWrap from '@/components/WorkItemWrap.vue';
 
 export default {
   components: {
-    DHeader,
-    DFooter,
-  },
-  mounted() {
-    // this.$msg('hhh');
+    WorkItemWrap,
   },
 };
 </script>
 
-<style>
+<style lang=scss >
 </style>

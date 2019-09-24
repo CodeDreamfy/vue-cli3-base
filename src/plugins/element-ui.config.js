@@ -32,6 +32,7 @@ import {
   TimePicker,
   Popover,
   Tooltip,
+  Scrollbar,
   // Breadcrumb,
   // BreadcrumbItem,
   Form,
@@ -52,10 +53,10 @@ import {
   // Rate,
   // Steps,
   // Step,
-  // Carousel,
-  // CarouselItem,
-  // Collapse,
-  // CollapseItem,
+  Carousel,
+  CarouselItem,
+  Collapse,
+  CollapseItem,
   // Cascader,
   // ColorPicker,
   // Transfer,
@@ -117,15 +118,16 @@ Vue.use(Row);
 Vue.use(Col);
 Vue.use(Upload);
 Vue.use(Progress);
-// Vue.use(Badge);
 Vue.use(Card);
+Vue.use(Scrollbar);
+// Vue.use(Badge);
 // Vue.use(Rate);
 // Vue.use(Steps);
 // Vue.use(Step);
-// Vue.use(Carousel);
-// Vue.use(CarouselItem);
-// Vue.use(Collapse);
-// Vue.use(CollapseItem);
+Vue.use(Carousel);
+Vue.use(CarouselItem);
+Vue.use(Collapse);
+Vue.use(CollapseItem);
 // Vue.use(Cascader);
 // Vue.use(ColorPicker);
 // Vue.use(Transfer);

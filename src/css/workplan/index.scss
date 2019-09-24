@@ -1,0 +1,105 @@
+@import '../utils.scss';
+.workplan-wrapper {
+  padding-top: 10px;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  .my-el-tabs .el-tabs__nav{
+    .el-tabs__item{
+      width: 120px;
+      text-align: center;
+    }
+    .el-tabs__item:nth-child(2){
+      width: 239px;
+    }
+  }
+  .workplan-container {
+    flex: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    .work-item-container {
+      padding-top: 38px;
+      flex: 0 0 570px;
+      display: flex;
+      flex-flow: column;
+      overflow: hidden;
+    }
+    .workplan-content {
+      flex: auto;
+      display: flex;
+      flex-flow: column;
+      overflow: hidden;
+      .workplan-header {
+        &.paddLeft {
+          padding-left: 570px;
+        }
+        width: 100%;
+        flex: 0 0 38px;
+        .d-el-tab {
+          .el-tabs__header {
+            margin-bottom: 0;
+          }
+          .el-tabs__nav-wrap:after {
+            height: 1px;
+            border-color: #ccc;
+          }
+          .el-tabs__item {
+            height: 38px; line-height: 38px;
+            font-size: 16px; color: #333;
+            &.is-active {
+              @include font-color;
+            }
+          }
+          .el-tabs__item.is-top:nth-child(2){
+            padding: 0 40px 0 20px;
+          }
+        }
+      }
+      .workplan-item-container {
+        flex: auto;
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    & {
+      .workplan-container {
+        .workplan-item-container {
+          overflow-y: auto !important;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 414px) {
+    & {
+      margin-top: 0;
+      padding-top: 0;
+      .workplan-container {
+        flex-wrap: wrap;
+        padding: 0;
+        overflow-y: auto !important;
+        .work-item-container {
+          flex: 0 0 100%;
+          margin-top: 0;
+          padding-top: 0;
+          overflow-y: auto;
+          .work-item-wrap {
+            .work-item-header {
+              .operator-wrap .date-wrap {
+                display: none;
+              }
+            }
+          }
+        }
+        .workplan-content {
+          flex: 0 0 100%;
+        }
+      }
+
+    }
+  }
+}

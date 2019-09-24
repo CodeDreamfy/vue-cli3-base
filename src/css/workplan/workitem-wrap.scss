@@ -1,0 +1,20 @@
+@import '../utils.scss';
+.work-item-wrap {
+	flex: none;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+  padding-bottom: 60px;
+	.work-item-list-wrap {
+    flex: auto;
+    height: 100%;
+		border: 1px solid #e6e6e6;
+		border-top: none;
+    overflow: hidden;
+    position: relative;
+    .work-item-list {
+      width: 100%;
+    }
+  }
+}

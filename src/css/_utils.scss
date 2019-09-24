@@ -1,14 +1,19 @@
 $color-skins: (
-  theme1: rgba(#76b533, 1)
+  theme1: rgba(#009A44 , 1),
+  theme2: rgba(#0000ff, 1)
 );
 
 $background-skins:(
-  theme1: rgba(#76b533, 1),
+  theme1: rgba(#009A44 , 1),
+  theme2: rgba(#0000ff, 1)
 );
 
 $border-skins:(
-  theme1: rgba(#76b533, 1),
+  theme1: rgba(#009A44 , 1),
+  theme2: rgba(#0000ff, 1)
 );
+
+
 @mixin font-color {
   @at-root {
     @each $name, $value in $color-skins {
@@ -18,21 +23,32 @@ $border-skins:(
     }
   }
 }
-@mixin background-color {
+@mixin background-color($workplan: '', $opacity: .1) {
   @at-root {
     @each $name, $value in $background-skins {
       html[skin="#{$name}"] & {
-        background-color: $value;
+        @if $workplan == 'workplan' {
+          background-color: rgba($value, $opacity);
+        }
+        @else {
+          background-color: $value;
+        }
       }
     }
   }
 }
 
-@mixin border-color {
+
+@mixin border-color($direction: 'none') {
   @at-root {
     @each $name, $value in $border-skins {
       html[skin="#{$name}"] & {
-        border-color: $value;
+        @if $direction != 'none' {
+          border-#{$direction}-color: $value;
+        }
+        @else {
+          border-color: $value;
+        }
       }
     }
   }

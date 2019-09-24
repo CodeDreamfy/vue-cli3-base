@@ -1,8 +1,15 @@
 /* normailze */
+
 @import 'sanitize.css';
 
 /* util */
+
 @import 'utils.scss';
 
+/* iconfont */
+
+@import './font/iconfont.css';
+
 /* reset and common( header, footer) */
+
 @import './common.scss';

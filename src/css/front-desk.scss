@@ -1,0 +1,36 @@
+.front-desk-wrapper {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  .d-tab-desk-box{
+    flex: 0 0 42px;
+    box-shadow: none;
+    .el-tabs__item {
+      height: 42px; line-height: 42px;
+      width: 140px; color: #333;
+      font-size: 18px; text-align: center;
+      &.is-active, &.is-active:hover {
+        font-weight: bold;
+        color: #333;
+      }
+    }
+    .el-tabs__content {
+      display: none;
+    }
+  }
+  .font-desk-container {
+    flex: auto;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 414px) {
+    overflow-y: auto;
+    .font-desk-container {
+      overflow-y: auto;
+    }
+  }
+}
